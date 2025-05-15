@@ -1,0 +1,93 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 50px repeat(4, 1fr);
+  gap: 8px;
+}
+
+.div1 {
+  grid-column: span 12 / span 12;
+  background-color: #fbdb93;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  height: ;
+}
+
+.div1 > .left {
+  display: flex;
+  justify-content: flex-start;
+}
+.div1 > .right {
+  display: flex;
+  justify-content: flex-end;
+}
+.header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.profile {
+  background-color: black;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+}
+.div2 {
+  grid-column: span 12 / span 12;
+  grid-row-start: 2;
+  background-color: #be5b50;
+  display: flex;
+  align-items: center;
+}
+.top-menu {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+}
+ul {
+  list-style: none;
+}
+.top-menu > li > button {
+  background-color: transparent;
+  padding: 10px;
+  border: 0 transparent;
+  color: white;
+  border-radius: 5px;
+}
+.div3 {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  grid-row-start: 3;
+  background-color: #8a2d3b;
+  height: 100vh;
+}
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px;
+}
+.side-menu > li > a {
+  padding: 10px;
+  color: white;
+  font-style: normal;
+}
+.div4 {
+  grid-column: span 10 / span 10;
+  grid-row: span 4 / span 4;
+  grid-column-start: 3;
+  grid-row-start: 3;
+  background-color: #641b2e;
+  padding: 16px;
+}
+h1 {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+p {
+  text-indent: 2em;
+  color: white;
+}
